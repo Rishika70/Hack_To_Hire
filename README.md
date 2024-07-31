@@ -1,51 +1,55 @@
-This repository contains an analysis of different question answering models, including BERT, GPT-2, and T5. The models are evaluated on various metrics, including accuracy, F1 score, BLEU score, and ROUGE score.
+# Question Answering Model Analysis
 
-## Models
+This repository contains an analysis of different question answering models, including BERT, GPT-2, and T5. The goal is to evaluate their performance and explore techniques for improving their accuracy and efficiency.
+
+## Models and Techniques
 
 ### BERT
 
-- Fine-tuned BERT for sequence classification.
-- Achieved [insert accuracy and F1 score].
+* **Model:** AutoModelForSequenceClassification from the Transformers library.
+* **Evaluation Metrics:** Accuracy and F1 score.
+* **Improvements:**
+    * Explore advanced cleaning techniques for text preprocessing.
+    * Incorporate Part-of-Speech tagging and Named Entity Recognition.
+    * Experiment with different BERT variants like RoBERTa or DistilBERT.
 
 ### GPT-2
 
-- Implemented a custom GPT-2 model for sequence classification.
-- Achieved [insert accuracy and F1 score].
-- BLEU scores for generated answers: [insert BLEU scores].
+* **Model:** Custom GPT2ForSequenceClassification class.
+* **Evaluation Metrics:** Accuracy, F1 score, and BLEU score.
+* **Improvements:**
+    * Utilize ensemble methods by combining predictions from multiple models.
+    * Conduct hyperparameter optimization using techniques like grid search or Bayesian optimization.
 
 ### T5
 
-- Fine-tuned T5 for conditional generation.
-- Achieved [insert ROUGE scores].
+* **Model:** T5ForConditionalGeneration from the Transformers library.
+* **Evaluation Metrics:** ROUGE scores (ROUGE-1, ROUGE-2, ROUGE-L).
+* **Improvements:**
+    * Employ layer-wise learning rate decay for fine-tuning.
+    * Conduct human evaluations to assess the quality of generated answers.
 
-## Data
+## Data Augmentation and Visualization
 
-- The models were trained and evaluated on a dataset of [describe the dataset].
+* **Data Augmentation Techniques:**
+    * Synonym Replacement
+    * Random Insertion
+    * Random Deletion
+    * Random Swap
+    * Back Translation
+    * Paraphrasing
+* **Visualization:**
+    * Bar charts for Accuracy, F1 score, and ROUGE scores.
+    * Box plot for BLEU scores distribution.
 
-## Evaluation
+## Further Improvements
 
-- **Accuracy:** Measures the percentage of correctly classified answers.
-- **F1 Score:** A harmonic mean of precision and recall, providing a balanced evaluation.
-- **BLEU Score:** Evaluates the quality of generated text by comparing it to reference answers.
-- **ROUGE Score:** Assesses the overlap between generated summaries and reference summaries.
+* **Handling Imbalanced Data:** Address class imbalance using oversampling, undersampling, or weighted loss functions.
+* **Interpretability and Explainability:** Visualize attention weights and analyze feature importance.
+* **Deployment and Optimization:** Quantize and prune the model for efficiency.
 
-## Visualization
+## Literature Survey
 
-- Bar charts and box plots are used to visualize the performance of the models.
-
-## Model Improvement
-
-- Potential improvements include:
-    - Enhanced preprocessing (e.g., advanced cleaning, POS tagging, NER).
-    - Advanced model architectures (e.g., BERT variations, ensemble methods).
-    - Fine-tuning strategies (e.g., hyperparameter optimization, layer-wise learning rate decay).
-    - Evaluation metrics (e.g., human evaluation).
-    - Data augmentation (e.g., paraphrasing, backtranslation).
-    - Handling imbalanced data (e.g., oversampling/undersampling, weighted loss function).
-    - Interpretability and explainability (e.g., attention visualization, feature importance analysis).
-    - Deployment and optimization (e.g., quantization, pruning).
-
-## Conclusion
-
-- This analysis provides insights into the performance of different question answering models.
-- The results can be used to guide the selection and improvement of models for specific question answering tasks.
+* [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/en/chapter7/7?fw=pt)
+* [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28)
+* [Text Preprocessing Steps](https://medium.com/@awaldeep/understanding-the-essentials-nlp-text-preprocessing-steps-b5d1fd58c11a)
