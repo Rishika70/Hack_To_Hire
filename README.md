@@ -54,8 +54,9 @@ The analysis suggests several potential improvements for training question-answe
 * **Fine-tuning Strategies:** Optimize hyperparameters and employ layer-wise learning rate decay for better convergence.
 * **Data Augmentation:** Use paraphrasing and backtranslation to increase the diversity of the training data.
 * **Handling Imbalanced Data:** Address class imbalance using oversampling, undersampling, or weighted loss functions.
-* **Interpretability and Explainability:** Visualize attention weights and analyze feature importance to understand model behavior.
+* **Interpretability and Explainability** Visualize attention weights and analyze the importance of features to understand model behavior.
 * **Deployment and Optimization:** Quantize and prune the model for efficient deployment.
+
 
 ### Literature Survey
 
@@ -64,3 +65,17 @@ For further information, refer to the following resources:
 * [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/en/chapter7/7?fw=pt)
 * [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28)
 * [NLP Text Preprocessing Steps](https://medium.com/@awaldeep/understanding-the-essentials-nlp-text-preprocessing-steps-b5d1fd58c11a)
+
+* ### Visualization
+
+The results of the analysis are visualized using bar charts and box plots. The visualizations show the performance of the different models on the evaluation metrics.
+![Screenshot 2024-07-31 133822](https://github.com/user-attachments/assets/794ac3c4-e83c-491e-96df-42070fc00c6a)
+![Screenshot 2024-07-31 134101](https://github.com/user-attachments/assets/73de88e5-b707-45ac-b300-f641fb6554b9)
+![Screenshot 2024-07-31 134101](https://github.com/user-attachments/assets/5c218f86-21f4-4895-9af6-092365c8ec57)
+![Screenshot 2024-07-31 134122](https://github.com/user-attachments/assets/3a579a8e-9a20-41c5-b8e6-a3fbd515dd44)
+![Screenshot 2024-07-31 135110](https://github.com/user-attachments/assets/bdbbe918-f8d1-4b14-b550-4cb89a2fc17f)
+
+
+
+
+
