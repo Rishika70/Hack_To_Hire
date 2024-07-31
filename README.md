@@ -56,7 +56,7 @@ The analysis suggests several potential improvements for training question-answe
 * **Handling Imbalanced Data:** Address class imbalance using oversampling, undersampling, or weighted loss functions.
 * **Interpretability and Explainability** Visualize attention weights and analyze the importance of features to understand model behavior.
 * **Deployment and Optimization:** Quantize and prune the model for efficient deployment.
-* ** Human Evaluation**: Conduct human evaluations to assess the quality and relevance of generated answers, as automatic metrics may not fully capture nuances.
+* ** Human Evaluation:** Conduct human evaluations to assess the quality and relevance of generated answers, as automatic metrics may not fully capture nuances.
 
 
 ### Literature Survey
