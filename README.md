@@ -31,9 +31,9 @@ The models are evaluated using various metrics:
 * **BLEU Score:** A metric for evaluating the quality of machine-generated text by comparing it to reference translations.
 * **ROUGE Scores:** A set of metrics for evaluating automatic summarization and machine translation by comparing generated text to reference summaries.
 
-### Visualization
+### Methadology
 
-The results of the analysis are visualized using bar charts and box plots. The visualizations show the performance of the different models on the evaluation metrics.
+
 
 ### Model Comparison
 
