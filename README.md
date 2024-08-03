@@ -42,15 +42,18 @@ The project involves the following steps:
 
 ### Model Performance Comparison
 
-![Model Performance Comparison](model_comparison.png)
+![Model Performance Comparison]![image](https://github.com/user-attachments/assets/3787e0a2-af45-4a7b-b3f2-015918244452)
+
 
 ### Model Performance Trends
 
-![Model Performance Trends](model_trends.png)
+![Model Performance Trends]![image](https://github.com/user-attachments/assets/f68c5a61-5328-4dbc-8a6d-e1d2ddc01761)
+
 
 ### ROUGE-1 vs ROUGE-2 Scores
 
-![ROUGE-1 vs ROUGE-2 Scores](rouge_scatter.png)
+![ROUGE-1 vs ROUGE-2 Scores]![image](https://github.com/user-attachments/assets/288f9cdb-38e7-4062-bf8f-1d3bb2e048c5)
+
 
 ## Summary and Discussion
 
