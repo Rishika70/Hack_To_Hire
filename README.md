@@ -1,82 +1,72 @@
-## Quora Question Answering Model Analysis
+# NLP Project: Question Answering and Text Generation
 
-This repository contains an analysis of different question answering models, including BERT, GPT-2, and T5. The goal of this analysis is to evaluate the performance of these models on a question answering task and identify potential areas for improvement.
+This project explores the application of Natural Language Processing (NLP) techniques for question answering and text generation using pre-trained Transformer models like BERT, GPT-2, and T5.
 
-### Dataset
+## Project Overview
 
-The analysis is performed on a dataset containing pairs of questions and answers. The dataset is preprocessed to prepare it for the models.
+The project involves the following steps:
 
-### Models
+1. **Data Loading and Preprocessing:** Load a dataset suitable for question answering and text generation tasks. Preprocess the data by cleaning, tokenizing, and formatting it appropriately for each model.
 
-Three different models are used for the analysis:
+2. **Model Selection and Fine-tuning:** Utilize pre-trained Transformer models (BERT, GPT-2, T5) and fine-tune them on the prepared dataset to optimize their performance for specific tasks.
 
-* **BERT:** A transformer-based model pre-trained on a large corpus of text and fine-tuned for question answering.
-* **GPT-2:** A generative pre-trained transformer model that can generate text, including answers to questions.
-* **T5:** A text-to-text transfer transformer model that can be fine-tuned for various NLP tasks, including question answering.
+3. **Question Answering:** Implement question answering functionality using the fine-tuned BERT model to extract relevant answers from given contexts.
 
-### Preprocessing
+4. **Text Generation:** Leverage the fine-tuned GPT-2 and T5 models to generate text based on given prompts, including generating answers for existing questions and creating questions from answers.
 
-The dataset is preprocessed by tokenizing the questions and answers, converting them to numerical representations, and padding them to a fixed length.
+5. **Model Evaluation and Metrics:** Evaluate the performance of each model using appropriate metrics such as accuracy, F1 score, BLEU score, and ROUGE scores. Analyze the results to understand the strengths and weaknesses of each model.
 
-### Training
+6. **Data Visualization:** Create visualizations to compare the performance of different models across various metrics. Use bar plots, line plots, scatter plots, and other suitable visualizations to gain insights into model behavior.
 
-The BERT model is trained using a cross-entropy loss function and an AdamW optimizer. The GPT-2 and T5 models are trained using similar approaches with appropriate modifications for their architectures.
+7. **Model Improvement:** Explore strategies to improve model performance, including data augmentation, hyperparameter tuning, and advanced fine-tuning techniques.
 
-### Evaluation
+## Results
 
-The models are evaluated using various metrics:
+### BERT Model Metrics:
+- Accuracy: 1.0
+- F1 Score: 1.0
 
-* **Accuracy:** The percentage of correctly answered questions.
-* **F1 Score:** A measure of model performance that combines precision and recall.
-* **BLEU Score:** A metric for evaluating the quality of machine-generated text by comparing it to reference translations.
-* **ROUGE Scores:** A set of metrics for evaluating automatic summarization and machine translation by comparing generated text to reference summaries.
+### GPT-2 Model Metrics:
+- Average BLEU Score: 0.4902
+- Average ROUGE-1 F1 Score: 0.4429
+- Average ROUGE-2 F1 Score: 0.1250
+- Average ROUGE-L F1 Score: 0.4429
 
-### Methadology
+### T5 Model Metrics:
+- Average BLEU Score: 0.5142
+- Average ROUGE-1 F1 Score: 0.4663
+- Average ROUGE-2 F1 Score: 0.1250
+- Average ROUGE-L F1 Score: 0.4429
 
+## Data Visualization
 
+### Model Performance Comparison
 
-### Model Comparison
+![Model Performance Comparison](model_comparison.png)
 
-| Model | Accuracy | F1 Score | BLEU Score | ROUGE-1 | ROUGE-2 | ROUGE-L |
-|---|---|---|---|---|---|---|
-| BERT | 0.85 | 0.82 | - | - | - | - |
-| GPT-2 | 0.78 | 0.75 | 0.51 (avg) | - | - | - |
-| T5 | - | - | - | 0.60 | 0.45 | 0.55 |
+### Model Performance Trends
 
-**Note:** The BLEU score is averaged over multiple predicted answers for the GPT-2 model.
+![Model Performance Trends](model_trends.png)
 
-### Novel Improvements
+### ROUGE-1 vs ROUGE-2 Scores
 
-The analysis suggests several potential improvements for training question-answering models:
+![ROUGE-1 vs ROUGE-2 Scores](rouge_scatter.png)
 
-* **Enhanced Preprocessing:** Incorporate advanced techniques like POS tagging and NER to extract more informative features from the text.
-* **Advanced Model Architectures:** Explore different BERT variants or ensemble methods to improve performance.
-* **Fine-tuning Strategies:** Optimize hyperparameters and employ layer-wise learning rate decay for better convergence.
-* **Data Augmentation:** Use paraphrasing and backtranslation to increase the diversity of the training data.
-* **Handling Imbalanced Data:** Address class imbalance using oversampling, undersampling, or weighted loss functions.
-* **Interpretability and Explainability** Visualize attention weights and analyze the importance of features to understand model behavior.
-* **Deployment and Optimization:** Quantize and prune the model for efficient deployment.
-* **Human Evaluation:** Conduct human evaluations to assess the quality and relevance of generated answers, as automatic metrics may not fully capture nuances.
+## Summary and Discussion
 
+- The BERT model achieved perfect accuracy and F1 score on the given dataset, indicating potential overfitting. Further validation on an unseen dataset is recommended.
+- GPT-2 and T5 models showed moderate performance in text generation, capturing key elements but needing improvement in generating nuanced and contextually rich text.
+- Data augmentation, hyperparameter tuning, and advanced fine-tuning techniques can be explored to enhance model performance.
 
-### Literature Survey
+## Literature Survey
 
-For further information, refer to the following resources:
+- [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/en/chapter7/7?fw=pt)
+- [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28)
+- [NLP Text Preprocessing Steps](https://medium.com/@awaldeep/understanding-the-essentials-nlp-text-preprocessing-steps-b5d1fd58c11a)
 
-* [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/en/chapter7/7?fw=pt)
-* [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28)
-* [NLP Text Preprocessing Steps](https://medium.com/@awaldeep/understanding-the-essentials-nlp-text-preprocessing-steps-b5d1fd58c11a)
+## How to Run
 
-* ### Visualization
-
-The results of the analysis are visualized using bar charts and box plots. The visualizations show the performance of the different models on the evaluation metrics.
-![Screenshot 2024-07-31 133822](https://github.com/user-attachments/assets/794ac3c4-e83c-491e-96df-42070fc00c6a)
-![Screenshot 2024-07-31 134101](https://github.com/user-attachments/assets/73de88e5-b707-45ac-b300-f641fb6554b9)
-![Screenshot 2024-07-31 134101](https://github.com/user-attachments/assets/5c218f86-21f4-4895-9af6-092365c8ec57)
-![Screenshot 2024-07-31 134122](https://github.com/user-attachments/assets/3a579a8e-9a20-41c5-b8e6-a3fbd515dd44)
-
-* ### Result 
-![Screenshot 2024-07-31 135110](https://github.com/user-attachments/assets/bdbbe918-f8d1-4b14-b550-4cb89a2fc17f)
+1. Install required libraries:
 
 
 
